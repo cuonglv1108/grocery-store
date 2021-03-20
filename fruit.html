@@ -1,0 +1,256 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Fruit</h1>
+  </div>
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">View Cart</a>
+    <a href="javascript:void(0)">Aisle</a>
+    <a href="javascript:void(0)">Log In</a>
+    <a href="javascript:void(0)">Sign Up</a>
+    <a href="javascript:void(0)">Service</a>
+  </div>
+  <h2>Choose items</h2>>
+  <button1 id='toggle' onclick="toggleView()" class="button1">SHOPPING NOW</button1>
+  <div class="items_container" id="view1">
+      <div class="item">
+        <img src="apple1.jpg">
+        <p>Name: Apple <span><input id="apple" type="number" min="1" value="1"></span></p>
+        <p>Price: $0.86/ea<span><button onclick="addToCard('apple',0.86)">Add to cart</button></span></p>
+      </div>
+      <div class="item">
+        <img src="orange2.jpg">
+        <p>Name: Orange<span><input id="orange" type="number" min="1" value="1"></span></p>
+        <p>Price: $1.49/ea<span><button onclick="addToCard('orange',1.49)">Add to cart</button></span></p>
+      </div>
+      <div class="item">
+        <img src="banana2.jpg">
+        <p>Name: Banana <span><input id="banana" type="number" min="1" value="1"></span></p>
+        <p>Price:$1.74/1kg<span><button onclick="addToCard('banana',1.74)">Add to cart</button></span></p>
+      </div><div class="item">
+        <img src="mango.jpg">
+        <p>Name: Mango <span><input id="mango" type="number" min="1" value="1"></span></p>
+        <p>Price: $1.99/ea<span><button onclick="addToCard('mango',1.99)">Add to cart</button></span></p>
+      </div><div class="item">
+        <img src="grape.jpg">
+        <p>Name: Grape <span><input id="grape" type="number" min="1" value="1"></span></p>
+        <p>Price:$4.18/1kg<span><button onclick="addToCard('grape',4.18)">Add to cart</button></span></p>
+      </div><div class="item">
+        <img src="lime.jpg">
+        <p>Name: Lime <span><input id="lime" type="number" min="1" value="1"></span></p>
+        <p>Price: $0.75/ea<span><button onclick="addToCard('lime',0.75)">Add to cart</button></span></p>
+      </div><div class="item">
+        <img src="kiwi.png">
+        <p>Name: Kiwi <span><input id="kiwi" type="number" min="1" value="1"></span></p>
+        <p>Price: $0.75/ea<span><button onclick="addToCard('kiwi',0.75)">Add to cart</button></span></p>
+      </div>
+      <div class="item">
+        <img src="lemon.jpg">
+        <p>Name: Lemon <span><input id="lemon" type="number" min="1" value="1"></span></p>
+        <p>Price: $0.60/ea<span><button onclick="addToCard('lemon',0.60)">Add to cart</button></span></p>
+      </div>
+      <div class="item">
+        <img src="pear.jpeg">
+        <p>Name: Pear <span><input id="pear" type="number" min="1" value="1"></span></p>
+        <p>Price: $0.89/ea<span><button onclick="addToCard('pear',0.89)">Add to cart</button></span></p>
+      </div>
+      <div class="item">
+        <img src="peach.jpg">
+        <p>Name: Peach <span><input id="peach" type="number" min="1" value="1"></span></p>
+        <p>Price: $1.42/ea<span><button onclick="addToCard('peach',1.42)">Add to cart</button></span></p>
+      </div>
+
+  </div>
+<div class ="flex-container" id="view2">
+  <div style="flex-grow: 2"> 
+    <div class="item2">
+      <img src="apple1.jpg">
+      <div>
+        <p>Name: Apple </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="apple_quantity">0</span></p>
+        <p>Price: $0.86</p>
+       <p>Total: <span id="apple_total">0<span></p> 
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="orange2.jpg">
+      <div>
+        <p>Name: Orange </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="orange_quantity">0</span></p>
+        <p>Price: $1.49</p>
+        <p>Total: <span id="orange_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="banana2.jpg">
+      <div>
+        <p>Name: Banana </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="banana_quantity">0</span></p>
+        <p>Price: $1.74</p>
+        <p>Total: <span id="banana_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="mango.jpg">
+      <div>
+        <p>Name: Mango </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="mango_quantity">0</span></p>
+        <p>Price: $1.99</p>
+        <p>Total: <span id="mango_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="grape.jpg">
+      <div>
+        <p>Name: Grape </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="grape_quantity">0</span></p>
+        <p>Price: $4.18</p>
+        <p>Total: <span id="grape_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="lime.jpg">
+      <div>
+        <p>Name: Lime </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="lime_quantity">0</span></p>
+        <p>Price: $0.75</p>
+        <p>Total: <span id="lime_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="kiwi.png">
+      <div>
+        <p>Name: Kiwi </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="kiwi_quantity">0</span></p>
+        <p>Price: $0.75</p>
+        <p>Total: <span id="kiwi_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="lemon.jpg">
+      <div>
+        <p>Name: Lemon </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="lemon_quantity">0</span></p>
+        <p>Price: $0.6</p>
+        <p>Total: <span id="lemon_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="pear.jpeg">
+      <div>
+        <p>Name: Pear </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="pear_quantity">0</span></p>
+        <p>Price: $0.89</p>
+        <p>Total: <span id="pear_total">0<span></p>
+      </div>
+    </div>
+
+    <div class="item2">
+      <img src="peach.jpg">
+      <div>
+        <p>Name: Peach </p>
+      </div>
+      <div id="span">
+        <p>Quantity: <span id="peach_quantity">0</span></p>
+        <p>Price: $1.42</p>
+        <p>Total: <span id="peach_total">0<span></p>
+      </div>
+    </div>
+
+
+  </div>
+  <div style="flex-grow: 1" > <p id="total">0</p> Tax included.
+  </div>
+</div>
+
+  <br>
+  <br>
+  <br>
+<footer>
+  <ul>
+    <li><a href="#home">Jobs</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</footer>
+  <script>
+    function toggleView()
+    {
+      var view1=document.getElementById('view1');
+      var view2=document.getElementById('view2');
+      var button1=document.getElementById('toggle');
+      if (button1.innerHTML=='SHOPPING NOW')
+      {
+      view1.style.display='none';
+      view2.style.display='flex';
+      button1.innerHTML='Back to shopping'
+      }
+      else
+            {
+      view1.style.display='flex';
+      view2.style.display='none';
+      button1.innerHTML='SHOPPING NOW'
+      }
+    }
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function addToCard(id,price)
+    {
+      var value=document.getElementById(id).value;
+      console.log(value);
+      var quantity=document.getElementById(id+'_quantity');
+      quantity.innerHTML=parseInt(quantity.innerHTML)+parseInt(value);
+      var value3=parseFloat(quantity.innerHTML)*parseFloat(price);
+      document.getElementById(id+'_total').innerHTML=value3;
+      var total=document.getElementById('total');
+      var value2= parseFloat(value)*parseFloat(price);
+      total.innerHTML=parseFloat(total.innerHTML)+value2;
+    }
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+
+
+</html>

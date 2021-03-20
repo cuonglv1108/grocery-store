@@ -1,0 +1,264 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+background-image: url('Layer 2.png');
+ background-attachment: fixed; 
+
+}
+.header {
+  background-image: url('fruit_header.jpg');
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+.header h1{
+    margin: 0;
+}
+h2{
+    font-family: cursive;
+    color: #EC441B;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+}
+#navbar {
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.8;
+  margin: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:'Trebuchet MS', sans-serif;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #09D5F5;
+  color: black;
+font-family:'Trebuchet MS', sans-serif;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+.items_container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.item
+{
+    margin: 10px;
+    background-color: black;
+}
+.item img  {
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  
+}
+.item input, .item button {
+    height: 25px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+.item button1{
+  background-color: MidnightBlue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.item span{
+    float: right;
+}
+.item p{
+    margin: 0;
+    padding: 10px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  opacity:0.8;
+  
+  
+}
+
+li{
+  float: left;
+
+}
+
+li a {
+  display: block;
+ opacity: 1;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:"verdana";
+}
+
+li a:hover:not(.active) {
+  background-color: #EC441B;
+}
+
+.active {
+  background-color: #0A8AF5;
+}
+
+.Logo{
+  text-align: center;
+  color: black;
+ font-family:"Lucida Handwriting";
+}
+.main{
+margin-top:20px;
+margin-left: 150px;
+margin-right: 150px;
+
+opacity:1;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .main{
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  }
+  .column{
+  max-width: 47%;
+  }
+  #navbar a{
+  padding: 7px 8 px;
+  font-size: 10px;
+  }
+  .header #navbar{
+  max-width: 100%;
+  }
+}
+  @media only screen and (max-width:1500px) {
+  /* For mobile phones: */
+  .main{
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  }
+  .column{
+  max-width: 30%;
+  }
+  #navbar a{
+  padding: 14px 16 px;
+  font-size: 13px;
+  }
+  .header #navbar{
+  max-width: 100%;
+  }
+.flex-container {
+  display: none;
+  width: 90vw;
+  text-align: center;
+  align-items: stretch;
+  
+}
+.flex-container > div {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }}  
+}
+#span{
+  width: 200px;
+  display: inline-block;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+}
+.item2 {
+  float: left;
+  margin: 10px;
+}
+.total p{
+  text-align: center;
+  margin-top-top: 50px;
+}
+.item2 div {
+  margin: auto 0;
+  display: inline-block;
+  float: left;
+  height: 200px;
+  padding-left: 50px;
+  width: 300px;
+  text-align: center;
+}
+.item2 div p{
+  
+}
+#span{
+  display: inline-block; 
+  float: right;
+  width: auto;
+
+}
+.item2 img{
+  display: block;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
